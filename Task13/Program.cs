@@ -2,8 +2,7 @@
 
 Console.Clear();
 Console.Write("enter the three-digit number: ");
-int num = int.Parse(Console.ReadLine()!);
-int count = num;
+int num = int.Parse(Console.ReadLine());
 int result = 0;
 
 if (num<100)
@@ -13,11 +12,12 @@ if (num<100)
 }
 else
 {
-    while(num >= 1000)
+    while(num >= 100)
     {
         num = num / 10;
     }
     result = num % 10;
 }
 Console.WriteLine(result);
+
 
